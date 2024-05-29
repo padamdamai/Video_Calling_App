@@ -32,3 +32,14 @@ def login_view(request):
 def dashboard(request):
     
     return render(request,'dashboard.html')
+
+def JoinMeeting(request):
+    return render(request,'joinMeeting.html')
+
+def NewMeeting(request):
+    return render(request,'newMeeting.html')
+
+# def Logout_user(request):
+#     return render(request,'logout_user.html')
+
+

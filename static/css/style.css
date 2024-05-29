@@ -1,0 +1,11 @@
+*{
+  scroll-behavior: smooth;
+}
+.container-fluid .container{
+  background-color: blue;
+  width: 40%;
+  margin-top: 17%;
+  font-family: monospace;
+  font-size:23px;
+  text-align: center;
+}

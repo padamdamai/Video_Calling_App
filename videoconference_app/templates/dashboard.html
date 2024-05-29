@@ -1,7 +1,16 @@
 {% extends 'index.html' %}
-
+{% load static %}
 {% block content %}
 
-<p>this is dashboard</p>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+          <div class="col"><a href="{% url 'newMeeting' %}">New Meeting</a></div>
+          <div class="w-100"><a href="{% url 'joinMeeting' %}">Join Meeting</a></div>
+          <div class="col"><a href="#">Logout</a></div>
+        </div>
+      </div>
+         
+</div>
 
 {% endblock content %}
