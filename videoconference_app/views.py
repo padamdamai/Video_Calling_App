@@ -31,7 +31,7 @@ def login_view(request):
 @login_required
 def dashboard(request):
     
-    return render(request,'dashboard.html')
+    return render(request,'dashboard.html',{'name':request.user.username})
 
 def JoinMeeting(request):
     return render(request,'joinMeeting.html')

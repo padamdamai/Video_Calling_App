@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,9 @@
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-    {% load static %}
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="shortcut icon" href="{% static 'images/logo.jpeg' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 </head>
 <body>
     {% block content %}
