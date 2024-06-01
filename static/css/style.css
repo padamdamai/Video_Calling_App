@@ -23,6 +23,11 @@ margin-top: 0px;
   border-radius: 24px;
   width: 17rem;
   }
+  button:hover{
+    border-radius: 38px;
+    font-size: 15px;
+    background-color:rgb(172, 166, 166);
+  }
   /* .icon {
     margin-right: 10px;
   } */
