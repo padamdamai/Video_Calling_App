@@ -3,6 +3,10 @@ from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 from .forms import RegisterForm
 
+
+def index(request):
+    return render(request, 'index.html')
+
 def register(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
@@ -34,12 +38,19 @@ def dashboard(request):
     return render(request,'dashboard.html',{'name':request.user.username})
 
 def JoinMeeting(request):
-    return render(request,'joinMeeting.html')
+    if request.method == 'POST':
+        roomID = request.POST['roomID']
+        return redirect("/meeting?roomID=" + roomID)
+    return render(request, 'joinMeeting.html')
 
-def NewMeeting(request):
-    return render(request,'newMeeting.html')
+@login_required
+def videoCall(request):
+    return render(request,'video_call.html',{'name':request.user.username})
 
-# def Logout_user(request):
-#     return render(request,'logout_user.html')
+@login_required
+def Logout_user(request):
+    logout(request)
+    return redirect('/login')
+
 
 

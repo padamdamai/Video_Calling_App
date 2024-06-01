@@ -24,18 +24,15 @@
         ">Hello {{name}}, you are Welcome </section>
       <div class="list_items">
           <a href="{% url 'newMeeting' %}" class="active">
-                  <i class="fa-sharp fa-solid fa-handshake"></i>
-                  <button>New Meeting</button>
+                  <button>New ROOM</button>
           </a>
           <a href="{% url 'joinMeeting' %}">
-                    <i class="fas fa-rss icon"></i>
-                    <button>Join Meeting</button>
+                    <button>Join Room</button>
           </a>
     
-          <a href="#">
-              <i class="fas fa-address-book icon"></i> 
-              <button>Logout</button>
-          </a>
+          <a href="{% url 'logout' %}" class="active">
+            <button>logout</button>
+    </a>
   
         </div>  
   </div>

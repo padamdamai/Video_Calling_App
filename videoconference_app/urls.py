@@ -5,8 +5,9 @@ urlpatterns = [
     path('login/',views.login_view,name='login'),
     path('dashboard',views.dashboard,name='dashboard'),
     path('JoinMeeting',views.JoinMeeting,name='joinMeeting'),
-    path('NewMeeting',views.NewMeeting,name='newMeeting'),
-    # path('dashboard',views.Logout_user,name='logout_user'),
+    path('NewMeeting',views.videoCall,name='newMeeting'),
+    path('logout/',views.Logout_user,name='logout'),
+    path('',views.index, name='index'),
 
 
 ]
