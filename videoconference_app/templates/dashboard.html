@@ -7,24 +7,38 @@
         <img src="{% static 'images/meeting.gif' %}" style="width:720px;" alt="">
       </div>
 
-      <div style="margin-top: 12rem;margin-left: 5rem;padding: 3rem;">
-        <div class="wrapper">
-          <section>Hello {{name}}, you are Welcome </section>
-          <ul>
-            <li><a href="{% url 'newMeeting' %}" class="active">
-                  <i class="fa-sharp fa-solid fa-handshake"></i>New Meeting
-                </a>
-            </li>
-            <li><a href="{% url 'joinMeeting' %}">
-                    <i class="fas fa-rss icon"></i>Join Meeting
-                </a>
-            </li>
-            <li><a href="#">
-              <i class="fas fa-address-book icon"></i> Logout
-                </a>
-            </li>
-        </ul>  
-        </div>
+      <div style="margin-top: 0px;
+      margin-left: 0rem;
+      padding-right: 34rem;
+      width: 31.5rem;
+      height: 37.7rem;
+      background-color:rgb(26%,29%, 36%);
+      ">
+  <div class="wrapper">
+          <section style="color: white;
+          width: 5rem;
+          font-family: monospace;
+          font-size: 27px;
+          width: 21rem;
+          margin:11rem 5rem 0rem 9rem;
+        ">Hello {{name}}, you are Welcome </section>
+      <div class="list_items">
+          <a href="{% url 'newMeeting' %}" class="active">
+                  <i class="fa-sharp fa-solid fa-handshake"></i>
+                  <button>New Meeting</button>
+          </a>
+          <a href="{% url 'joinMeeting' %}">
+                    <i class="fas fa-rss icon"></i>
+                    <button>Join Meeting</button>
+          </a>
+    
+          <a href="#">
+              <i class="fas fa-address-book icon"></i> 
+              <button>Logout</button>
+          </a>
+  
+        </div>  
+  </div>
       </div>  
 </div>
 

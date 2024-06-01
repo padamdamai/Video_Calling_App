@@ -1,32 +1,28 @@
-.container-fluid{
-    width: 23%;
-    height: auto;
-    margin-top: 13%;
+body{
+  padding: 0px 0px 0px 0px;
 }
 .container-fluid{
 display: flex;
-margin-left: 3rem;
 margin-top: 0px;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
+.gif_img{
+  margin-left: 0px;
+}
+.list_items{
+    margin: 17px 23px auto 124px;
     padding: 0;
     width: 300px;
-    background-color: #f1f1f1;
   }
-  li a {
+  .list_items a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
   }
-
-  /* Change the link color on hover */
-  li a:hover {
-    background-color: #fad390;
-    color: #fff;
+  button{
+  border-radius: 24px;
+  width: 17rem;
   }
-  .icon {
+  /* .icon {
     margin-right: 10px;
-  }
+  } */
