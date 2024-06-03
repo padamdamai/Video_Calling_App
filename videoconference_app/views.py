@@ -39,8 +39,8 @@ def dashboard(request):
 
 def JoinMeeting(request):
     if request.method == 'POST':
-        roomID = request.POST['roomID']
-        return redirect("/meeting?roomID=" + roomID)
+        roomID = request.POST['roomID'] 
+        return redirect("/NewMeeting?roomID=" + roomID)
     return render(request, 'joinMeeting.html')
 
 @login_required

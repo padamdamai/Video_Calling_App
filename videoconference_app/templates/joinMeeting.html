@@ -4,12 +4,11 @@
 
 
 <div class="joinRoomForm" style="background-color:rgb(44, 78, 128);height: 100%;width: 100%;padding:7.84rem">
-    <form action="{% url 'joinMeeting' %}" method="post" style="height: 22rem;width: 25rem;background-color: white;border-radius: 15px;margin-left: 21rem;">
+    <form action="{% url 'joinMeeting' %}" method="POST"  style="height: 22rem;width: 25rem;background-color: white;border-radius: 15px;margin-left: 21rem;">
         {% csrf_token %}
         <fieldset>
             <legend style="text-align: center; margin-top: 30px;font: size 25px;margin-bottom: 45px;">Join Room</legend>
-        <label for="roomId"></label>
-            <input type="text"  id="roomId" placeholder="Enter room id" name="roomId" style="width: 18rem; height: 3rem;margin-top: 2.5rem; border-radius:8px;margin-left: 3rem;text-align: center;"><br>
+            <input type="text" placeholder="Enter room id" name="roomID" style="width: 18rem; height: 3rem;margin-top: 2.5rem; border-radius:8px;margin-left: 3rem;text-align: center;"><br>
         <input type="submit" value="Join" style="width: 18rem;height: 3rem; border-radius:8px;margin-left: 3rem;text-align: center;background-color:rgb(44, 78, 128);margin-top: 2rem;">
         </fieldset>
         <center>
