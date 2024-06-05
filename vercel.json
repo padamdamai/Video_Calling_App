@@ -3,6 +3,7 @@
     "builds": [
         {
             "src":"videoconferencing/swgi.py",
+            "use:":"@vercel",
             "config":{ "maxlambdaSize":"15mb", "runtime":"python3.11.2"}
         },
         {
