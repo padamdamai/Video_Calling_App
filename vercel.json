@@ -4,7 +4,7 @@
         {
             "src":"videoconferencing/swgi.py",
             "use:":"@vercel/python",
-            "config":{ "maxlambdaSize":"15mb"," runtime":"python3.11"}
+            "config":{ "maxlambdaSize":"15mb", "runtime":"python3.11.2"}
         },
         {
             "src":"build_files.sh",
